@@ -1,0 +1,22 @@
+
+#hBox {
+  -fx-color:#8cbcff;
+  -fx-border: 1px solid red;
+  -fx-background-color: #2f4f4f;
+  
+}
+#addBtn {
+  -fx-box-shadow: 0 0 3px gray;
+  -fx-background-radius: 5em;
+  -fx-border: 1px solid red;
+  -fx-color:#8cbcff;
+  
+  
+}
+
+#addBtn:hover {
+    -fx-color: #0254bf;
+}
+
+
+

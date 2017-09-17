@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="333.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Adding.FXMLDocumentController2">
+   <children>
+      <VBox layoutX="59.0" prefHeight="159.0" prefWidth="414.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Tag:">
+               <VBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tag" prefHeight="25.0" prefWidth="379.0">
+               <VBox.margin>
+                  <Insets left="30.0" right="39.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Add the path here:">
+               <VBox.margin>
+                  <Insets left="30.0" right="200.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="24.0" prefWidth="414.0">
+               <children>
+                  <TextField fx:id="path" prefHeight="25.0" prefWidth="364.0">
+                     <HBox.margin>
+                        <Insets left="30.0" right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button onAction="#insertOneData" mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="+">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="414.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="apply" mnemonicParsing="false" onAction="#insertData" prefHeight="28.0" prefWidth="63.0" text="Apply">
+                     <HBox.margin>
+                        <Insets left="260.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="63.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label text="Selection:">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </Label>
+            <VBox prefHeight="152.0" prefWidth="414.0">
+               <padding>
+                  <Insets bottom="5.0" left="30.0" right="25.0" top="5.0" />
+               </padding>
+               <children>
+                  <TableView fx:id="tableSelection" prefHeight="147.0" prefWidth="351.0">
+                    <columns>
+                      <TableColumn fx:id="tagC" prefWidth="95.0" text="Tag" />
+                      <TableColumn fx:id="pathC" prefWidth="217.0" text="Path" />
+                      <TableColumn fx:id="actionC" prefWidth="46.0" text="Choice"/> 
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   
+    <stylesheets>
+    <URL value="@main.css" />
+  </stylesheets>
+</AnchorPane>
